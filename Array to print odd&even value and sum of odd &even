@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int x[7],odd[7],even[7],i,j=0,k=0,sumodd=0,sumeven=0;
+    printf("Enter the element of the array\n");
+    for(i=0;i<7;i++)
+    {
+        scanf("%d",&x[i]);
+    }
+    for(i=0;i<7;i++)
+    {
+        if(x[i]%2==0)
+        {
+            even[k]=x[i];
+            k=k+1;
+        }
+        else
+        {
+            odd[j]=x[i];
+            j=j+1;
+        }
+    }
+    for(i=0;i<j;i++)
+    {
+        printf("%d",odd[i]);
+    }
+    printf("\n");
+    
+    for(i=0;i<k;i++)
+    {
+        printf("%d",even[i]);
+    }
+    printf("\n");
+    for(i=0;i<j;i++)
+    {
+        sumodd=sumodd+odd[i];
+    }
+    printf("%d\n",sumodd);
+    
+    for(i=0;i<k;i++)
+    {
+        sumeven=sumeven+even[i];
+    }
+    printf("%d\n",sumeven);
+    
+    getch();
+
+}
