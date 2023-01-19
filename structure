@@ -1,0 +1,25 @@
+#include<stdio.h>
+void main()
+{
+struct student
+{
+int roll;
+char name[30];
+int age;
+};
+struct student std[10];
+int i;
+printf("Enter 10 student records");
+for(i=0;i<10;i++)
+{
+scanf("%d%s%d",&std[i].roll,&std[i].name,&std[i].age);
+}
+for(i=0;i<10;i++)
+{
+printf("%d %s %d\n",std[i].roll,std[i].name,std[i].age);
+}
+getch();
+}
+
+
+
