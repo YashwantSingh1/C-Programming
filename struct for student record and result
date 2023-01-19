@@ -1,0 +1,34 @@
+#include<stdio.h>
+void main()
+{
+struct student
+{
+int roll;
+char name[30];
+int s1;
+int s2;
+int s3;
+int s4;
+int s5;
+};
+struct student std[10];
+int i,sum,res;
+printf("Enter 10 student records");
+for(i=0;i<10;i++)
+{
+scanf("%d%s%d%d%d%d%d",&std[i].roll,&std[i].name,&std[i].s1,&std[i].s2,&std[i].s3,&std[i].s4,&std[i].s5);
+}
+for(i=0;i<10;i++)
+{
+sum=std[i].s1+std[i].s2+std[i].s3+std[i].s4+std[i].s5;
+res=sum/5;
+if(res>=80)
+{
+printf("%s\n",std[i].name);
+}
+}
+getch();
+}
+
+
+
